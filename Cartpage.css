@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+  --backColor: #871420;
+  --color: white;
+  --padding: 1.2rem;
+  --ff :'Merriweather',serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--ff);
+}
+.header {
+  display: flex;
+  background-color: var(--backColor);
+}
+.logoContainer {
+  width: 60px;
+  flex: 1;
+}
+.logoContainer img {
+  width: inherit;
+  margin-top: 3px;
+  cursor: pointer;
+}
+.linksContainer {
+  flex: 2;
+}
+.linksContainer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.linksContainer ul li {
+  list-style: none;
+  
+}
+
+.linksContainer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color);
+  padding: var(--padding);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.linksContainer ul li a:hover{
+  background-color: var(--color);
+  color: var(--backColor);
+  border-radius: 10px;
+}
+.mainContainer{
+  padding: 10px;
+  margin-bottom: 200px;
+}
+.productContainer{
+  margin: 20px 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.productDescription{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.totalContainer{
+  text-align: right;
+  position: absolute;
+  right: 20%;
+}
+footer {
+  background-color: var(--backColor);
+  color: var(--color);
+  display: flex;
+  justify-content: space-around;
+  padding: var(--padding);
+}
+footer div ul li {
+  padding: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+footer div ul li:hover{
+  background-color: var(--color);
+  color: var(--backColor);
+  border-radius: 10px;
+}
+footer div ul {
+  list-style-type: none;
+}
+.locationContainer ul li a{
+  width: 100%;
+  color: var(--color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.locationContainer ul li a:hover{
+  background-color: var(--color);
+  color: var(--backColor);
+  border-radius: 10px;
+}
+@media screen and (max-width:481px){
+  .header{
+    display: block;
+  }
+  .logoContainer{
+    width: 100%;
+    text-align: center;
+  }
+  .logoContainer img{
+    width: 60px;
+  }
+  .linksContainer ul{
+    display: block;
+  }
+  .linksContainer ul li a{
+    width: 100%;
+    text-align: center;
+  }
+  footer{
+    flex-direction: column;
+  }
+}
+  

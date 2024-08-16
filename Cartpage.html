@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart Page</title>
+  <link rel="stylesheet" href="./Cartpage.css">
+  <link rel="icon" href="../assets/DB logo.png" type="image/png" />
+</head>
+<body>
+  <header role="banner" class="header">
+    <section class="logoContainer">
+      <img src="./assets/DB logo.png" alt="Logo" />
+    </section>
+    <nav class="linksContainer" role="navigation">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./Product.html">Products</a></li>
+        <li><a href="./Cartpage.html">Cart</a></li>
+        <li><a href="./About.html">About</a></li>
+        <li><a href="">Login/Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="mainContainer">
+    <div class="productList">
+      <div class="productContainer">
+        <img src="./assets/Products/google pixel 8 pro.jpeg" alt="">
+        <div class="productDescription">
+          <p>Quantity: 1</p>
+          <h3>Price: $1000</h3>
+        </div>
+      </div>
+      <div class="productContainer">
+        <img src="./assets/Products/motorola razr plus.jpeg" alt="">
+        <div class="productDescription">
+          <p>Quantity: 1</p>
+          <h3>Price: $2000</h3>
+        </div>
+      </div>
+      <hr/>
+      <div class="totalContainer">
+        <table>
+          <tr scope="row-group">
+            <th id="total">Total:</th>
+            <td headers="total">$3000</td>
+          </tr>
+          <tr scope="row-group">
+            <th id="discount">Discount:</th>
+            <td headers="discount">$100</td>
+          </tr>
+          <tr scope="row-group">
+            <th id="coupons">Coupons:</th>
+            <td headers="coupons">$20 OFF</td>
+          </tr>
+          <tr scope="row-group">
+            <th id="hst">HST:</th>
+            <td headers="hst">13%</td>
+          </tr>
+          <tr scope="row-group">
+            <th id="gtotal"><h2>Grand Total:</h2></th>
+            <td headers="gtotal"><h2>$3200</h2></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
+  <footer role="contentInfo">
+    <div class="locationContainer">
+      <ul>
+        <li><p>Address</p> <span>117 Onward Avenue</span></li>
+        <li><a href="tel:+1-416-857-9012">Call us at: 416-857-9012</a></li>
+        <li>Postal code: N2H 3J8</li>
+      </ul>
+    </div>
+    <div class="socialContainer">
+      <ul>
+        <li>Facebook</li>
+        <li>Instagram</li>
+        <li>Twitter</li>
+        <li>Mail</li>
+      </ul>
+    </div>
+    <div class="aboutusContainer">
+      <ul>
+        <li>About us </li>
+        <li>Weekly offers</li>
+        <li>Contact us</li>
+        <li>Repairs</li>
+      </ul>
+    </div>
+    <div googleMap>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5798.815349176701!2d-80.40390740000001!3d43.3894078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1721848771980!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </footer>
+</body>
+</html>
