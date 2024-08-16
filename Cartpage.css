@@ -22,6 +22,9 @@ body{
   width: 60px;
   flex: 1;
 }
+.headerclass{
+  padding-left: 20%;
+}
 .logoContainer img {
   width: inherit;
   margin-top: 3px;
@@ -67,9 +70,11 @@ body{
   justify-content: space-around;
 }
 .totalContainer{
-  text-align: right;
   position: absolute;
-  right: 20%;
+  right: 33%;
+}
+.TableText{
+  text-align: left;
 }
 footer {
   background-color: var(--backColor);
@@ -101,9 +106,12 @@ footer div ul {
   color: var(--backColor);
   border-radius: 10px;
 }
-@media screen and (max-width:481px){
+@media screen and (max-width:500px){
   .header{
     display: block;
+  }
+  .headerclass{
+    padding-left: 0;
   }
   .logoContainer{
     width: 100%;
@@ -112,6 +120,37 @@ footer div ul {
   .logoContainer img{
     width: 60px;
   }
+  .productContainer{
+    
+    display: grid;
+   grid-template-columns: 1fr;
+  }
+  .priceclass{
+    padding-top: 55px;
+    font-size: 13px;
+  }
+  .productDescription{
+    display: grid;
+    grid-template-columns: 1fr 100px;
+  
+  }
+  .totalContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    right: 5%;
+  }
+  table{
+    width: 100%;
+  padding-left: 50%;
+
+ }
+.TableText{
+  text-align: left;
+}
+.Tablevalue{
+  text-align: left;
+}
   .linksContainer ul{
     display: block;
   }

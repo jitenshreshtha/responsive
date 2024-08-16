@@ -169,7 +169,7 @@ footer div ul {
   border-radius: 10px;
 }
 
-@media screen and (max-width:481px){
+@media screen and (max-width:500px){
   .header{
     display: block;
     text-align: center;
@@ -197,6 +197,7 @@ footer div ul {
   .cartButton{
     margin-top: 10px;
   }
+  /*
   .similarContent{
     margin: 20px 0;
   }
@@ -206,12 +207,22 @@ footer div ul {
   }
   .similarProductContainer::-webkit-scrollbar{
     display: none;
+  }*/
+
+  .similarProductContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
  
   .similarDescription{
     white-space: nowrap;
   }
   footer{
+    display: flex;
     flex-direction: column;
+  }
+  .googleMap{
+    height: auto;
   }
 }

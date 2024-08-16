@@ -214,6 +214,16 @@ footer div ul {
     width: 100%;
     text-align: center;
   }
+  .categoryList,.productList{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-left: 22%;
+  }
+  .categoryItem,.productContainer{
+    height: 200px;
+    width: 250px;
+  }
+  
   .offerContainer {
     grid-template-columns: 1fr;
     grid-template-rows: 50vh 50vh 50vh;

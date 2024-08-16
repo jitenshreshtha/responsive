@@ -11,108 +11,109 @@
 </head>
 <body>
   <header role="banner" class="header">
-    <section class="logoContainer">
+    <section role="region" class="logoContainer">
       <img src="./assets/DB logo.png" alt="Logo" />
     </section>
-    <nav class="linksContainer" role="navigation">
-      <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./Product.html">Products</a></li>
-        <li><a href="./Cartpage.html">Cart</a></li>
-        <li><a href="./About.html">About</a></li>
-        <li><a href="">Login/Signup</a></li>
+    <nav role="navigation" class="linksContainer">
+      <ul role="list">
+        <li role="listitem"><a href="home.html">Home</a></li>
+        <li role="listitem"><a href="Product.html">Products</a></li>
+        <li role="listitem"><a href="#">Shop</a></li>
+        <li role="listitem"><a href="About.html">About Us</a></li>
+        <li role="listitem"><a href="#">Login/Signup</a></li>
       </ul>
     </nav>
   </header>
   <main role="main" class="mainContainer">
-    <section class="searchContainer">
+    <section role="search" class="searchContainer">
       <i class="fa-solid fa-bars menuIcon"></i>
-      <input type="text" placeholder="Search" class="inputBar"/>
+      <input type="text" placeholder="Search" class="inputBar" />
       <i class="fa-solid fa-magnifying-glass searchIcon"></i>
     </section>
-    <section class="productContainer">
-      <div class="productList">
-        <img src="./assets/Products/iphone.webp" alt="">
-        <div class="productDescription">
-          <h3>Iphone 15 pro max 256 GB </h3>
-          <ul>
-            <li>Display - 6.7in Super Retina XDR display</li>
-            <li>Storage - 256GB</li>
-            <li>Battery - Lithium Ion</li>
-            <li>Design - Natural Titanium</li>
-            <li>Camera - 48MP Rear, 12MP Front</li>
-            <li>Video fps</li>
-            <li>Wifi support- Wi-Fi 6E </li>
-            <div class="cartButton">
-              <h3>Price : $1000</h3>
-              <input type="button" value="Add to Cart">
+    <section role="region" class="productContainer">
+      <div role="region" class="productList">
+        <img src="./assets/Products/iphone.webp" alt="iPhone 15 pro max 256 GB">
+        <div role="region" class="productDescription">
+          <h3>Iphone 15 pro max 256 GB</h3>
+          <ul role="list">
+            <li role="listitem">Display - 6.7in Super Retina XDR display</li>
+            <li role="listitem">Storage - 256GB</li>
+            <li role="listitem">Battery - Lithium Ion</li>
+            <li role="listitem">Design - Natural Titanium</li>
+            <li role="listitem">Camera - 48MP Rear, 12MP Front</li>
+            <li role="listitem">Video fps</li>
+            <li role="listitem">Wifi support- Wi-Fi 6E</li>
+            <div role="region" class="cartButton">
+              <h3>Price: $1000</h3>
+              <a href="Cartpage.html">
+                <input type="button" value="Add to Cart">
+              </a>
             </div>
           </ul>
         </div>
       </div>
     </section>
-    <section class="similarContent">
+    <section role="region" class="similarContent">
       <h2>Similar products</h2>
-      <div class="similarProductContainer">
-      <div class="similarList">
-        <img src="./assets/Products/google pixel 8 pro.jpeg" alt="" srcset="">
-        <div class="similarDescription">
-          <h3>Google pixel 8 pro </h3>
+      <div role="list" class="similarProductContainer">
+        <div role="listitem" class="similarList">
+          <img src="./assets/Products/google pixel 8 pro.jpeg" alt="Google Pixel 8 Pro">
+          <div role="region" class="similarDescription">
+            <h3>Google Pixel 8 Pro</h3>
+          </div>
+        </div>
+        <div role="listitem" class="similarList">
+          <img src="./assets/Products/motorola razr plus.jpeg" alt="Motorola Razr Plus">
+          <div role="region" class="similarDescription">
+            <h3>Motorola Razr Plus</h3>
+          </div>
+        </div>
+        <div role="listitem" class="similarList">
+          <img src="./assets/Products/Samsung s24ultra.jpeg" alt="Samsung S24 Ultra">
+          <div role="region" class="similarDescription">
+            <h3>Samsung S24 Ultra</h3>
+          </div>
+        </div>
+        <div role="listitem" class="similarList">
+          <img src="./assets/Products/sony xperia.jpeg" alt="Sony Xperia">
+          <div role="region" class="similarDescription">
+            <h3>Sony Xperia</h3>
+          </div>
+        </div>
+        <div role="listitem" class="similarList">
+          <img src="./assets/Products/Xaoimi mi 15 pro.jpeg" alt="Xiaomi Mi 15 Pro">
+          <div role="region" class="similarDescription">
+            <h3>Xiaomi Mi 15 Pro</h3>
+          </div>
         </div>
       </div>
-      <div class="similarList">
-        <img src="./assets/Products/motorola razr plus.jpeg" alt="" srcset="">
-        <div class="similarDescription">
-          <h3>Motorola Razr plus</h3>
-        </div>
-      </div>
-      <div class="similarList">
-        <img src="./assets/Products/Samsung s24ultra.jpeg" alt="" srcset="">
-        <div class="similarDescription">
-          <h3>Samsung S24 ultra</h3>
-        </div>
-      </div>
-      <div class="similarList">
-        <img src="./assets/Products/sony xperia.jpeg" alt="" srcset="">
-        <div class="similarDescription">
-          <h3>Sony Xperia</h3>
-        </div>
-      </div>
-      <div class="similarList">
-        <img src="./assets/Products/Xaoimi mi 15 pro.jpeg" alt="" srcset="">
-        <div class="similarDescription">
-          <h3>Xaoimi Mi 15 pro</h3>
-        </div>
-      </div>
-    </div>
     </section>
   </main>
-
-  <footer role="contentInfo">
-    <div class="locationContainer">
-      <ul>
-        <li><p>Address</p> <span>117 Onward Avenue</span></li>
-        <li><a href="tel:+1-416-857-9012">Call us at: 416-857-9012</a></li>
-        <li>Postal code: N2H 3J8</li>
+  <footer role="contentinfo">
+    <div role="region" class="locationContainer">
+      <ul role="list">
+        <li role="listitem"><p>Address</p> <span>117 Onward Avenue</span></li>
+        <li role="listitem"><a href="tel:+1-416-857-9012">Call us at: 416-857-9012</a></li>
+        <li role="listitem">Postal code: N2H 3J8</li>
       </ul>
     </div>
-    <div class="socialContainer">
-      <ul>
-        <li>Facebook</li>
-        <li>Instagram</li>
-        <li>Twitter</li>
-        <li>Mail</li>
+    <div role="region" class="socialContainer">
+      <ul role="list">
+        <li role="listitem">Facebook</li>
+        <li role="listitem">Instagram</li>
+        <li role="listitem">Twitter</li>
+        <li role="listitem">Mail</li>
       </ul>
     </div>
-    <div class="aboutusContainer">
-      <ul>
-        <li>About us </li>
-        <li>Weekly offers</li>
-        <li>Contact us</li>
-        <li>Repairs</li>
+    <div role="region" class="aboutusContainer">
+      <ul role="list">
+        <li role="listitem">About us</li>
+        <li role="listitem">Weekly offers</li>
+        <li role="listitem">Contact us</li>
+        <li role="listitem">Repairs</li>
       </ul>
     </div>
-    <div googleMap>
+    <div role="region" class="googleMap">
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5798.815349176701!2d-80.40390740000001!3d43.3894078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1721848771980!5m2!1sen!2sca" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </footer>

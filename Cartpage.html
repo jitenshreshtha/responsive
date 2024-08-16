@@ -4,63 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cart Page</title>
-  <link rel="stylesheet" href="./Cartpage.css">
-  <link rel="icon" href="../assets/DB logo.png" type="image/png" />
+  <link rel="stylesheet" href="Cartpage.css">
+  <link rel="icon" href="./assets/DB logo.png" type="image/png">
 </head>
 <body>
   <header role="banner" class="header">
     <section class="logoContainer">
       <img src="./assets/DB logo.png" alt="Logo" />
     </section>
-    <nav class="linksContainer" role="navigation">
+    <section class="linksContainer">
       <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./Product.html">Products</a></li>
-        <li><a href="./Cartpage.html">Cart</a></li>
-        <li><a href="./About.html">About</a></li>
-        <li><a href="">Login/Signup</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="Product.html">Products</a></li>
+          <li><a href="">Shop</a></li>
+          <li><a href="About.html">About Us</a></li>
+          <li><a href="">Login/Signup</a></li>
       </ul>
-    </nav>
+    </section>
   </header>
   <main class="mainContainer">
+    <h2 class="headerclass">Shopping Cart </h2>
     <div class="productList">
       <div class="productContainer">
         <img src="./assets/Products/google pixel 8 pro.jpeg" alt="">
         <div class="productDescription">
-          <p>Quantity: 1</p>
-          <h3>Price: $1000</h3>
+          <div class="bodytextclass">
+            <h2>Pixa 8 Pro</h2>
+            In Stock<br>
+            Sold by Anyos<br>
+            <label for="Qty1"> Qty</label>
+            <select id="Qty1" name="Qty1" disabled>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select> | <a href="#">Delete</a> |  <a href="#">Save for later</a> | <a href="#">Share</a>
+          </div>
+          <div class="priceclass">
+              <B>Price :1500.00</B>
+          </div>
         </div>
       </div>
       <div class="productContainer">
         <img src="./assets/Products/motorola razr plus.jpeg" alt="">
         <div class="productDescription">
-          <p>Quantity: 1</p>
-          <h3>Price: $2000</h3>
+          <div class="bodytextclass">
+            <h2>Pixa 8 Pro</h2>
+            In Stock<br>
+            Sold by Anyos <br>
+            <label for="Qty1"> Qty</label>
+            <select id="Qty1" name="Qty1" disabled>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select> | <a href="#">Delete</a> |  <a href="#">Save for later</a> | <a href="#">Share</a>
+          </div>
+          <div class="priceclass">
+              <B>Price :1500.00</B>
+          </div>
         </div>
       </div>
       <hr/>
       <div class="totalContainer">
-        <table>
+        <table>         
           <tr scope="row-group">
-            <th id="total">Total:</th>
-            <td headers="total">$3000</td>
+            <th id="total" class="TableText">Total:</th>
+            <td headers="total" class="Tablevalue">$3000</td>
           </tr>
           <tr scope="row-group">
-            <th id="discount">Discount:</th>
-            <td headers="discount">$100</td>
+            <th id="discount" class="TableText">Discount:</th>
+            <td headers="discount" class="Tablevalue">$100</td>
           </tr>
           <tr scope="row-group">
-            <th id="coupons">Coupons:</th>
-            <td headers="coupons">$20 OFF</td>
+            <th  id="coupons" class="TableText">Coupons:</th>
+            <td  headers="coupons" class="Tablevalue">$20 OFF</td>
           </tr>
           <tr scope="row-group">
-            <th id="hst">HST:</th>
-            <td headers="hst">13%</td>
-          </tr>
+            <th id="hst" class="TableText">HST:</th>
+            <td  headers="hst" class="Tablevalue">13%</td>
+          </tr >
           <tr scope="row-group">
-            <th id="gtotal"><h2>Grand Total:</h2></th>
-            <td headers="gtotal"><h2>$3200</h2></td>
-          </tr>
+            <th id="gtotal" class="TableText"><h2>Grand Total:</h2></th>
+            <td headers="gtotal" class="Tablevalue"><h2>$3200</h2></td>
+          </tr>         
         </table>
       </div>
     </div>
