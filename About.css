@@ -236,7 +236,10 @@ footer div ul {
   .formContainer{
     height: 160vh;
   }
-
+  .formContainer textarea{
+    width: 80%;
+    
+  }
   footer{
     flex-direction: column;
   }
