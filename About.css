@@ -123,6 +123,51 @@ body{
 .personInfo h3{
  white-space: nowrap;
 }
+.formContainer{
+  width: 100%;
+  height: 90vh;
+  background-color:var(--backColor);
+  margin: 10px auto;
+  text-align: center;
+}
+.formContainer legend{
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.formContainer label{
+  width: 300px;
+  text-align: right;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+.formContainer input{
+  padding: var(--padding);
+  border-radius: 15px;
+  border: none;
+  margin-bottom: 15px;
+}
+.formContainer textarea{
+  border: none;
+  border-radius: 15px;
+}
+.formContainer .button{
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--color);
+  color: var(--backColor);
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.formContainer .button:hover{
+  background-color: var(--backColor);
+  color: var(--color);
+}
 footer {
   background-color: var(--backColor);
   color: var(--color);
@@ -181,6 +226,9 @@ footer div ul {
   }
   .ratingContent{
     height: 300px;
+  }
+  .formContainer{
+    height: 80vh;
   }
 
   footer{
